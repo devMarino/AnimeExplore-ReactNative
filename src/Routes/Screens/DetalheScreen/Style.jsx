@@ -28,18 +28,18 @@ const styles = StyleSheet.create({
     infoAnime: {
         flexDirection: 'row',
         gap: 8,
-        marginBottom: 16,
+        marginBottom: 8,
     },
     infoScore: {
         backgroundColor: '#F47521',
         paddingHorizontal: 12,
         paddingVertical: 4,
-        borderRadius: 20,
+        borderRadius: 25,
     },
     infoText: {
         color: '#fff',
         fontWeight: 'bold',
-        fontSize: 13,
+        fontSize: 14,
     },
     sinopseLabel: {
         color: '#F47521',
