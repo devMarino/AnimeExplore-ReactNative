@@ -1,6 +1,7 @@
 import { ActivityIndicator, Text, View } from "react-native";
 import Api from "../../../services/Api";
 import { useEffect, useState } from "react";
+import Render from "../../../components/Render";
 export default function HomeScreen({navigation}){
 
     const [pageTopAnime, setPageTopAnime] = useState(1)
@@ -28,14 +29,15 @@ export default function HomeScreen({navigation}){
     BuscarTopAnimes()
     },[])
     // ativa style enquanto carrega animes
-    if (loading) return <ActivityIndicator size='large' color="#ffffff"/>
+    if (loading) return <ActivityIndicator size='large' color="#0308ff"/>
 
     if (error) return <Text>Erro ao carregar animes</Text>
 
      return(
-        <View>
-            <Text>Total de animes: {animes.length}</Text>
-        </View>
+        <Render
+        animes={animes}
+        navigation={navigation}
+        />
     )
     
 }
