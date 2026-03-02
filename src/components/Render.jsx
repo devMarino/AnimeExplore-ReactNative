@@ -9,6 +9,8 @@ return(
     <View>
         <FlatList
         data={animes}
+        numColumns={2}
+        columnWrapperStyle={{justifyContent: 'space-between', paddingHorizontal: 2}}
         renderItem={( {item} ) => (
         <Pressable
             onPress={() => navigation.navigate('DetalheScreen', {animes: item})}
