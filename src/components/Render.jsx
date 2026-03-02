@@ -13,7 +13,7 @@ return(
         columnWrapperStyle={{justifyContent: 'space-between', paddingHorizontal: 2}}
         renderItem={( {item} ) => (
         <Pressable
-            onPress={() => navigation.navigate('DetalheScreen', {animes: item})}
+            onPress={() => navigation.navigate('DetalheScreen', {info: item})}
             >
             <Card
             item={item}
