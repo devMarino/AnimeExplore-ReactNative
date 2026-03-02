@@ -22,11 +22,15 @@ const styles = StyleSheet.create({
         backgroundColor: '#1a1a1a',
         borderRadius: 8,
         overflow: 'hidden',
+         borderWidth: 2,
+        borderColor: '#fff'
     },
     imagem: {
         width: '100%',
-        height: 200,
+        height: 280,
         resizeMode: 'cover',
+        borderWidth: 1,
+        borderColor: '#000000'
     },
     titulo: {
         textAlign: 'center',
