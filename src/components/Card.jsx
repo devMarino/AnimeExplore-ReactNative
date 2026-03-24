@@ -22,7 +22,7 @@ const styles = StyleSheet.create({
         backgroundColor: '#1a1a1a',
         borderRadius: 8,
         overflow: 'hidden',
-         borderWidth: 2,
+        borderWidth: 2,
         borderColor: '#fff'
     },
     imagem: {
@@ -30,7 +30,7 @@ const styles = StyleSheet.create({
         height: 280,
         resizeMode: 'cover',
         borderWidth: 1,
-        borderColor: '#000000'
+        borderColor: '#fffdfd'
     },
     titulo: {
         textAlign: 'center',

@@ -2,6 +2,6 @@ import { Text } from "react-native"
 
 export default function PerfilScreen({navigation}){
     return(
-        <Text>Perfil</Text>
+        <Text>Em construção</Text>
     )
 }

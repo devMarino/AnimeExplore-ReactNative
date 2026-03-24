@@ -2,6 +2,7 @@ import { ActivityIndicator, Text, View } from "react-native";
 import Api from "../../../services/Api";
 import { useEffect, useState } from "react";
 import Render from "../../../components/Render";
+import styles from "./Style";
 export default function HomeScreen({navigation}){
 
     const [pageTopAnime, setPageTopAnime] = useState(1)
@@ -34,10 +35,12 @@ export default function HomeScreen({navigation}){
     if (error) return <Text>Erro ao carregar animes</Text>
 
      return(
-        <Render
-        animes={animes}
-        navigation={navigation}
-        />
+        <View style={styles.container}>
+            <Render
+            animes={animes}
+            navigation={navigation}
+            />
+        </View>
     )
     
 }

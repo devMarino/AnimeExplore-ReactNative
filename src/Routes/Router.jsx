@@ -9,6 +9,7 @@ export default function Router(){
             <Stack.Screen 
             name="AppTabs"
             component={AppTabs}
+            options={{headerShown: false}}
             />
         </Stack.Navigator>
     )
